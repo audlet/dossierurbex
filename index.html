@@ -1,1 +1,93 @@
 
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explorez l'urbex</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            text-align: center;
+        }
+        /* Image de fond couvrant toute la page */
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('./images/-9dc8-4e 8c9a4df8 36-b576-ac80b62edaf8.webp) no-repeat center center/cover;
+            z-index: -1; /* Place l'image derrière tout le contenu */
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background: rgba(0, 0, 0, 0.7); /* Bandeau semi-transparent */
+            z-index: 10;
+            position: relative;
+        }
+        header .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        header .menu {
+            font-size: 18px;
+        }
+        .content {
+            margin-top: 20%;
+            z-index: 1;
+        }
+        .content h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+        .content p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .content .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .content .buttons a {
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid white;
+            border-radius: 5px;
+            color: white;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+        }
+        .content .buttons a:hover {
+            background: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- Image de fond -->
+    <div class="background"></div>
+
+    <!-- Bandeau en haut -->
+    <header>
+        <div class="logo">UrbexKIF</div>
+        <div class="menu">☰</div>
+    </header>
+
+    <!-- Contenu principal -->
+    <div class="content">
+        <h1>Explorez l'urbex en toute sécurité</h1>
+        <p>Rejoignez notre communauté et découvrez des lieux uniques avec adrénaline et liberté.</p>
+        <div class="buttons">
+            <a href="#">Commencer</a>
+            <a href="#">Sécurité</a>
+        </div>
+    </div>
+</body>
+</html>
